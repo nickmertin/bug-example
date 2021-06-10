@@ -2,7 +2,7 @@
 target = "thumbv6m-none-eabi"
 
 [unstable]
-# build-std = ["core", "alloc"]
+build-std = ["core", "alloc"]
 
 [target.'cfg(all(target_arch = "arm", target_os = "none"))']
 runner = "gdb -q -x test.gdb -batch"
